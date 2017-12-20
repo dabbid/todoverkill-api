@@ -8,7 +8,7 @@ var app = express();
 var routes = require('../router/router.js');
 
 app.use(cors({
-  origin: 'http://localhost:4200',
+  origin: 'https://dabbid.github.io',
 }));
 app.use(logger('dev'));
 app.use(bodyParser.json());
