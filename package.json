@@ -1,0 +1,29 @@
+{
+  "name": "todoverkill-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "todoverkill-api": "www.js"
+  },
+  "scripts": {
+    "start": "node ./index --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabbid/todoverkill-api.git"
+  },
+  "author": "David Daignan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dabbid/todoverkill-api/issues"
+  },
+  "homepage": "https://github.com/dabbid/todoverkill-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonfile": "^4.0.0",
+    "morgan": "^1.9.0"
+  }
+}
