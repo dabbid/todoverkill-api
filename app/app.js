@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
@@ -6,6 +7,9 @@ var bodyParser = require('body-parser');
 var app = express();
 var routes = require('../router/router.js');
 
+app.use(cors({
+  origin: 'http://localhost:4200',
+}));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
