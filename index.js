@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var app = require('./app/app.js');
 var debug = require('debug')('mean-app:server');
 var http = require('http');
